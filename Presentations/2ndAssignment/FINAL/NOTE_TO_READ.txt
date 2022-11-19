@@ -1,6 +1,0 @@
-i define file(recipes.txt) destination in my RecepeProxy class. For some reason, i couldnt 
-access root, whenever i ran the application, eclipse told me:file is not there or something. 
-So, i tested that with some other file destionation ("C://SomeFolder//recipes.txt") 
-and it worked ok, i assume its just something not code related so i think the root destination will work for you.
-If not, please just change the path. 
-thank you

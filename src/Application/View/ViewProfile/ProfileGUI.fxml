@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.View.ViewProfile.ProfileWindowControler">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="621.0" prefWidth="749.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Label fx:id="userNameLabel" layoutX="97.0" layoutY="87.0" text="UserName" />
+            <Label fx:id="passwordLabel" layoutX="98.0" layoutY="136.0" text="Password" />
+            <Label fx:id="sexLabel" layoutX="98.0" layoutY="186.0" text="Sex" />
+            <Label fx:id="emailLabel" layoutX="98.0" layoutY="230.0" text="Email" />
+            <Label fx:id="premiumUserLabel" layoutX="99.0" layoutY="281.0" text="Premium User" />
+            <Label fx:id="hobbiesLabel" layoutX="102.0" layoutY="388.0" text="Hobbies" />
+            <Label fx:id="dateOfBirthLabel" layoutX="99.0" layoutY="333.0" text="Date of Birth" />
+            <Button fx:id="submit" layoutX="101.0" layoutY="527.0" mnemonicParsing="false" onAction="#submitProfile" text="Submit" />
+            <DatePicker fx:id="dateOfBirth" editable="false" layoutX="217.0" layoutY="324.0" />
+            <TextField fx:id="email" layoutX="215.0" layoutY="221.0" />
+            <TextField fx:id="password" layoutX="215.0" layoutY="127.0" />
+            <TextField fx:id="userName" layoutX="215.0" layoutY="78.0" />
+            <CheckBox fx:id="isPremiumUser" layoutX="217.0" layoutY="277.0" mnemonicParsing="false" />
+            <CheckBox fx:id="soccer" layoutX="215.0" layoutY="388.0" mnemonicParsing="false" text="Soccer" />
+            <CheckBox fx:id="dancing" layoutX="326.0" layoutY="388.0" mnemonicParsing="false" text="Dancing" />
+            <CheckBox fx:id="movies" layoutX="441.0" layoutY="388.0" mnemonicParsing="false" text="Movies" />
+            <CheckBox fx:id="swimming" layoutX="215.0" layoutY="437.0" mnemonicParsing="false" text="Swimming" />
+            <CheckBox fx:id="running" layoutX="326.0" layoutY="437.0" mnemonicParsing="false" text="Running" />
+            <CheckBox fx:id="reading" layoutX="441.0" layoutY="437.0" mnemonicParsing="false" text="Reading" />
+            <Button fx:id="goToChat" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goToChat" text="GoToChat" />
+            <Button fx:id="goToSearch" layoutX="125.0" layoutY="14.0" mnemonicParsing="false" text="GoToSearch" />
+            <Button fx:id="exit" layoutX="244.0" layoutY="14.0" mnemonicParsing="false" onAction="#exitApplication" text="ExitApplication" />
+            <Button fx:id="deleteProfile" layoutX="563.0" layoutY="527.0" mnemonicParsing="false" text="DeleteProfile" />
+            <RadioButton fx:id="male" layoutX="209.0" layoutY="186.0" mnemonicParsing="false" text="Male">
+               <toggleGroup>
+                  <ToggleGroup fx:id="sexGroup" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="female" layoutX="347.0" layoutY="186.0" mnemonicParsing="false" text="Female" toggleGroup="$sexGroup" />
+            <Button fx:id="goToLogIn" layoutX="390.0" layoutY="14.0" mnemonicParsing="false" onAction="#goToLogIn" text="GoToLogIn" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

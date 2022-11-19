@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.View.ViewLogIn.LogInWindowController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="451.0" prefWidth="689.0">
+         <children>
+            <Button fx:id="logIn" layoutX="334.0" layoutY="226.0" mnemonicParsing="false" onAction="#logIn" text="LogIn" />
+            <PasswordField fx:id="password" layoutX="269.0" layoutY="172.0" />
+            <Label fx:id="passwordLabel" layoutX="164.0" layoutY="177.0" text="Password" />
+            <TextField fx:id="userName" layoutX="269.0" layoutY="103.0" />
+            <Label fx:id="userNameLabel" layoutX="164.0" layoutY="108.0" text="UserName" />
+            <Label fx:id="goToRegisterNewProfileLabel" layoutX="257.0" layoutY="324.0" text="No profile yet? Create one here!" />
+            <Button fx:id="goToRegisterNewProfile" layoutX="491.0" layoutY="375.0" mnemonicParsing="false" onAction="#createNewProfile" text="CreateNewProfile" />
+            <Button fx:id="exit" layoutX="60.0" layoutY="382.0" mnemonicParsing="false" onAction="#exitApplication" text="ExitApplication" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.View.ViewChat.ChatWindowController">
+   <children>
+      <AnchorPane prefHeight="609.0" prefWidth="760.0">
+         <children>
+            <Button fx:id="sendChatMessage" layoutX="559.0" layoutY="365.0" mnemonicParsing="false" onAction="#sendChatMessage" text="SendMessage" />
+            <Button fx:id="disconnect" layoutX="302.0" layoutY="505.0" mnemonicParsing="false" onAction="#disconnectFromChat" text="Disconnect" />
+            <TextArea fx:id="chatArea" editable="false" layoutX="380.0" layoutY="54.0" prefHeight="280.0" prefWidth="325.0" />
+            <Label fx:id="chatWindowLabel" layoutX="418.0" layoutY="33.0" text="ChatArea" />
+            <TextArea fx:id="connectedUsersList" layoutX="14.0" layoutY="74.0" prefHeight="149.0" prefWidth="180.0" />
+            <Label fx:id="connectedUsersListLabel" layoutX="14.0" layoutY="33.0" text="ConnectedUsersList" />
+            <Label layoutX="194.0" layoutY="453.0" text="Disconnects will return you to Profile Section" />
+            <TextField fx:id="sendMessageField" layoutX="276.0" layoutY="365.0" prefHeight="31.0" prefWidth="258.0" promptText="write your message here" />
+         </children>
+      </AnchorPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

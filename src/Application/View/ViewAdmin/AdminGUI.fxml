@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.View.ViewAdmin.AdminWindowControler">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="681.0" prefWidth="766.0">
+         <children>
+             <Button fx:id="blockDetail" layoutX="70.0" layoutY="540.0" mnemonicParsing="false" text="BlockDetail" />
+            <Button fx:id="unblockDetail" layoutX="180.0" layoutY="540.0" mnemonicParsing="false" text="UnblockDetail" />
+            <Button fx:id="blockProfile" layoutX="316.0" layoutY="540.0" mnemonicParsing="false" text="BlockProfile" />
+            <Button fx:id="unblockProfile" layoutX="444.0" layoutY="540.0" mnemonicParsing="false" text="UnblockProfile" />
+            <Button fx:id="exit" layoutX="596.0" layoutY="540.0" mnemonicParsing="false" onAction="#exitApplication" text="ExitApplication" />
+           
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

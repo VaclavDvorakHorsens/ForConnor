@@ -1,0 +1,3 @@
+1; Hamburger; 4 inch bun; Tomato; Onion; Beef; Lettuce; Cucumber; Ketchup
+2; Cheese burger; 5 inch bun; Tomato; Onion; Cheese; Beef; Lettuce; Cucumber; Ketchup
+3; Veggie burger; 5 inch bun; Green asparagus; Tomato; Grilled Portobello Mushroom; Onion; Veggie Patty; Lettuce; Cucumber; Vegan mayo
